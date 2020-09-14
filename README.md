@@ -7,8 +7,6 @@
 
 ### Create an Express Gateway
     $ eg gateway create
-    $ make servers
-    $ make clients
 
 ### Follow the prompts and choose the Getting Started server template
     Follow the prompts and choose the Getting Started server template
