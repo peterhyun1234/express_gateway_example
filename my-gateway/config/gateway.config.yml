@@ -7,9 +7,14 @@ apiEndpoints:
   api:
     host: localhost
     paths: '/ip'
+  server:
+    host: localhost
+    path: '/users'
 serviceEndpoints:
   httpbin:
     url: 'https://httpbin.org'
+  serverService:
+    url: 'http://localhost:3000'
 policies:
   - basic-auth
   - cors
@@ -29,4 +34,14 @@ pipelines:
       - proxy:
           - action:
               serviceEndpoint: httpbin 
+              changeOrigin: true
+  userPipeline:
+    apiEndpoints:
+      - server
+    policies:
+    # Uncomment `key-auth:` when instructed to in the Getting Started guide.
+    # - key-auth:
+      - proxy:
+          - action:
+              serviceEndpoint: serverService
               changeOrigin: true
