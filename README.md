@@ -20,3 +20,6 @@
 ### Run Express Gateway
     $ cd my-gateway && npm start
 ```
+
+## 2. ref by
+    https://medium.com/@oyedejipeace/building-a-simple-microservices-app-with-express-gateway-a8fd49d81aeb
