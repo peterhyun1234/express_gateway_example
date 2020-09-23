@@ -22,4 +22,8 @@
 ```
 
 ## 2. ref by
+
+### 2.1. adopting micro services 
     https://medium.com/@oyedejipeace/building-a-simple-microservices-app-with-express-gateway-a8fd49d81aeb
+### 2.2. adopting security by using oauth2.0
+    https://www.express-gateway.io/getting-started-with-oauth2/
